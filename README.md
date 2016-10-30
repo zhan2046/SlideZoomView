@@ -23,6 +23,10 @@
 4.  往左滑计算方式，往右滑计算方式
 5.  设置不同状态下TextViewde参数
 
+---
+
+我的博客：[详解](https://ruzhan123.github.io/2016/10/31/2016-10-31-01-HorizontalNumberView%E4%B8%8Eseekbar%E5%85%B1%E4%BA%AB%E6%BB%91%E5%8A%A8%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89view/)
+
 
 ##License
 
