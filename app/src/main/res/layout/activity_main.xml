@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+      android:id="@+id/tv"
+      android:layout_marginTop="100dp"
+      android:gravity="center"
+      android:textSize="16sp"
+      android:textColor="@android:color/black"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+
+  <com.horizontalnumberview.widget.HorizontalNumberView
+      android:id="@+id/hnv"
+      android:layout_marginTop="30dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      />
+
+  <SeekBar
+      android:id="@+id/seek_bar"
+      android:background="@drawable/seek_bar_bg"
+      android:progressDrawable="@drawable/seek_bar_pro_drawable"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+
+</LinearLayout>

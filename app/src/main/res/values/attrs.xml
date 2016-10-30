@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="HorizontalNumberView">
+
+    <attr name="number_view_normal_text_color" format="color" />
+    <attr name="number_view_select_text_color" format="color" />
+
+    <attr name="number_view_normal_text_size" format="integer" />
+    <attr name="number_view_select_text_size" format="integer" />
+  </declare-styleable>
+
+
+
+</resources>
