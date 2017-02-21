@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <color name="colorPrimary">#FF4067A2</color>
-  <color name="colorPrimaryDark">#FF4067A2</color>
-  <color name="colorAccent">#FF4067A2</color>
 
   <color name="number_view_normal_text_color">#FF4067A2</color>
   <color name="number_view_select_text_color">#FF4067A2</color>
+
 </resources>

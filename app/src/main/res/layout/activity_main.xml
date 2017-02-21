@@ -1,37 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
 
-  <TextView
-      android:id="@+id/tv"
-      android:layout_marginTop="100dp"
-      android:gravity="center"
-      android:textSize="16sp"
-      android:textColor="@android:color/black"
+
+  <zhan.slidezoomview.SlideZoomView
+      android:id="@+id/hnv1"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      />
-
-  <com.horizontalnumberview.widget.HorizontalNumberView
-      android:id="@+id/hnv"
-      android:layout_marginTop="30dp"
+      android:layout_height="40dp"
       android:layout_marginLeft="15dp"
       android:layout_marginRight="15dp"
-      android:layout_width="match_parent"
-      android:layout_height="30dp"
+      android:layout_marginTop="30dp"
+      app:number_view_normal_text_color="@color/number_view_normal_text_color"
+      app:number_view_normal_text_size="40"
+      app:number_view_select_text_color="@color/number_view_select_text_color"
+      app:number_view_select_text_size="70"
       />
 
   <SeekBar
-      android:id="@+id/seek_bar"
-      android:background="@drawable/seek_bar_bg"
-      android:progressDrawable="@drawable/seek_bar_pro_drawable"
-      android:layout_marginLeft="15dp"
-      android:layout_marginRight="15dp"
+      android:id="@+id/seek_bar1"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:layout_marginBottom="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:background="@drawable/seek_bar_bg"
+      android:progressDrawable="@drawable/seek_bar_pro_drawable"
+      />
+
+  <zhan.slidezoomview.SlideZoomView
+      android:id="@+id/hnv2"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_marginTop="30dp"
+      app:number_view_normal_text_color="@color/number_view_normal_text_color"
+      app:number_view_normal_text_size="40"
+      app:number_view_select_text_color="@color/number_view_select_text_color"
+      app:number_view_select_text_size="70"
+      />
+
+  <SeekBar
+      android:id="@+id/seek_bar2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:background="@drawable/seek_bar_bg"
+      android:progressDrawable="@drawable/seek_bar_pro_drawable"
+      />
+
+  <zhan.slidezoomview.SlideZoomView
+      android:id="@+id/hnv3"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_marginTop="30dp"
+      app:number_view_normal_text_color="@color/number_view_normal_text_color"
+      app:number_view_normal_text_size="40"
+      app:number_view_select_text_color="@color/number_view_select_text_color"
+      app:number_view_select_text_size="70"
+      />
+
+  <SeekBar
+      android:id="@+id/seek_bar3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:background="@drawable/seek_bar_bg"
+      android:progressDrawable="@drawable/seek_bar_pro_drawable"
       />
 
 </LinearLayout>
