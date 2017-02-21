@@ -22,6 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
     mHnv1 = (SlideZoomView) findViewById(R.id.hnv1);
     mSeekBar1 = (SeekBar) findViewById(R.id.seek_bar1);
+    mHnv1.setNumberStringArray(new String[]{"1","2","3","4","5","6","7","8","9","10"});
+    mHnv1.setSeekBar(mSeekBar1);
+
+
 
     mHnv2 = (SlideZoomView) findViewById(R.id.hnv2);
     mSeekBar2 = (SeekBar) findViewById(R.id.seek_bar2);
@@ -30,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
     mSeekBar3 = (SeekBar) findViewById(R.id.seek_bar3);
 
     //you must call this method
-    mHnv1.setNumberStringArray(new String[]{"1","2","3","4","5","6","7","8","9","10"});
+
     mHnv2.setNumberStringArray(new String[]{"A","B","C","D","E","F","G","H","I","J"});
     mHnv3.setNumberStringArray(new String[]{"我","要","放","大","我","要","滑","动","啊","呀"});
 
-    mHnv1.setSeekBar(mSeekBar1);
+
     mHnv2.setSeekBar(mSeekBar2);
     mHnv3.setSeekBar(mSeekBar3);
   }

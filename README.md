@@ -1,52 +1,104 @@
-<!--lang: java-->
-# 这是一个SeeKBar与数组共享滑动效果的View
 
-效果图：
+SlideZoomView
+===============
 
-![](https://github.com/ruzhan123/HorizontalNumberView/raw/master/gif/number_view.gif)
+A simple slide zoom view for Android
 
+Screenshots
+===============
 
-
-简单分析：
-
-1. 初始化一些参数，设置数据，准备在onDraw方法中连续绘制TextView
-2. 计算出TextView绘制的坐标点，根据左滑还是右滑设置TextView之间间隙，大小，颜色
-3. 将seekbar注入进来，根据对调监听设置当前位置，进行重绘，绘制最新的数组列表
-
----
-
-实现难点：
-
-1.  计算出绘制数组宽度与高度
-2.  TextView绘制坐标与方式
-3.  seekbar回调，改变哪一些值可以达到预期的滑动效果
-4.  往左滑计算方式，往右滑计算方式
-5.  设置不同状态下TextViewde参数
-
----
-
-我的博客：[详解](https://ruzhan123.github.io/2016/10/31/2016-10-31-01-HorizontalNumberView%E4%B8%8Eseekbar%E5%85%B1%E4%BA%AB%E6%BB%91%E5%8A%A8%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89view/)
+![](https://github.com/ruzhan123/SlideZoomView/raw/master/gif/slidezoomview.gif)
 
 
-##License
+SlideZoomView control text **position** and **size**, in onDraw **canvas** set **drawText**
+
+[![](https://jitpack.io/v/ruzhan123/SlideZoomView.svg)](https://jitpack.io/#ruzhan123SlideZoomView)
+
+Gradle
+------
+
+Add it in your root build.gradle at the end of repositories:
 
 
 ```java
 
-
-		Copyright (C) 2016 ruzhan
-		
-		Licensed under the Apache License, Version 2.0 (the "License");
-		you may not use this file except in compliance with the License.
-		You may obtain a copy of the License at
-		
-		http://www.apache.org/licenses/LICENSE-2.0
-		
-		Unless required by applicable law or agreed to in writing, software
-		distributed under the License is distributed on an "AS IS" BASIS,
-		WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-		See the License for the specific language governing permissions and
-		limitations under the License.
-
-
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
+
+Add the dependency:
+
+
+```java
+
+	dependencies {
+	        compile 'com.github.ruzhan123:SlideZoomView:v1.0'
+	}
+```
+
+
+Usage
+------
+
+```xml
+
+	<zhan.slidezoomview.SlideZoomView
+	  android:id="@+id/hnv1"
+	  android:layout_width="match_parent"
+	  android:layout_height="40dp"
+	  android:layout_marginLeft="15dp"
+	  android:layout_marginRight="15dp"
+	  android:layout_marginTop="30dp"
+	  app:number_view_normal_text_color="@color/number_view_normal_text_color"
+	  app:number_view_normal_text_size="40"
+	  app:number_view_select_text_color="@color/number_view_select_text_color"
+	  app:number_view_select_text_size="70"
+	  />
+	
+	<SeekBar
+	  android:id="@+id/seek_bar1"
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginBottom="15dp"
+	  android:layout_marginLeft="15dp"
+	  android:layout_marginRight="15dp"
+	  android:background="@drawable/seek_bar_bg"
+	  android:progressDrawable="@drawable/seek_bar_pro_drawable"
+	  />
+```
+
+```java
+
+    mHnv1 = (SlideZoomView) findViewById(R.id.hnv1);
+    mSeekBar1 = (SeekBar) findViewById(R.id.seek_bar1);
+    mHnv1.setNumberStringArray(new String[]{"1","2","3","4","5","6","7","8","9","10"});
+    mHnv1.setSeekBar(mSeekBar1);
+```
+
+Developed by
+-------
+
+ ruzhan - <a href='javascript:'>ruzhan333@gmail.com</a>
+
+
+License
+-------
+
+    Copyright 2017 ruzhan
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+	
