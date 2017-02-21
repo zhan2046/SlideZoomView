@@ -12,7 +12,7 @@ Screenshots
 
 SlideZoomView control text **position** and **size**, in onDraw **canvas** set **drawText**
 
-[![](https://jitpack.io/v/ruzhan123/SlideZoomView.svg)](https://jitpack.io/#ruzhan123SlideZoomView)
+[![](https://jitpack.io/v/ruzhan123/SlideZoomView.svg)](https://jitpack.io/#ruzhan123/SlideZoomView)
 
 Gradle
 ------
