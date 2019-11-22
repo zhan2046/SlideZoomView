@@ -1,8 +1,10 @@
 package com.slidezoomview;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.SeekBar;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import zhan.slidezoomview.SlideZoomView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,18 +22,18 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    mHnv1 = (SlideZoomView) findViewById(R.id.hnv1);
-    mSeekBar1 = (SeekBar) findViewById(R.id.seek_bar1);
+    mHnv1 = findViewById(R.id.hnv1);
+    mSeekBar1 = findViewById(R.id.seek_bar1);
     mHnv1.setNumberStringArray(new String[]{"1","2","3","4","5","6","7","8","9","10"});
     mHnv1.setSeekBar(mSeekBar1);
 
 
 
-    mHnv2 = (SlideZoomView) findViewById(R.id.hnv2);
-    mSeekBar2 = (SeekBar) findViewById(R.id.seek_bar2);
+    mHnv2 = findViewById(R.id.hnv2);
+    mSeekBar2 = findViewById(R.id.seek_bar2);
 
-    mHnv3 = (SlideZoomView) findViewById(R.id.hnv3);
-    mSeekBar3 = (SeekBar) findViewById(R.id.seek_bar3);
+    mHnv3 = findViewById(R.id.hnv3);
+    mSeekBar3 = findViewById(R.id.seek_bar3);
 
     //you must call this method
 

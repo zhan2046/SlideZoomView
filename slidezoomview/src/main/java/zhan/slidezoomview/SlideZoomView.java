@@ -11,9 +11,6 @@ import android.view.ViewTreeObserver;
 import android.widget.SeekBar;
 import java.text.DecimalFormat;
 
-/**
- * Created by zhan on 2017/2/21.
- */
 public class SlideZoomView extends View implements SeekBar.OnSeekBarChangeListener {
 
   private static final int ITEM_SLIP_TIME = 10;
