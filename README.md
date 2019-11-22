@@ -41,49 +41,10 @@ Add the dependency:
 ```
 
 
-Usage
-------
-
-```xml
-
-	<zhan.slidezoomview.SlideZoomView
-	  android:id="@+id/hnv1"
-	  android:layout_width="match_parent"
-	  android:layout_height="40dp"
-	  android:layout_marginLeft="15dp"
-	  android:layout_marginRight="15dp"
-	  android:layout_marginTop="30dp"
-	  app:number_view_normal_text_color="@color/number_view_normal_text_color"
-	  app:number_view_normal_text_size="40"
-	  app:number_view_select_text_color="@color/number_view_select_text_color"
-	  app:number_view_select_text_size="70"
-	  />
-	
-	<SeekBar
-	  android:id="@+id/seek_bar1"
-	  android:layout_width="match_parent"
-	  android:layout_height="wrap_content"
-	  android:layout_marginBottom="15dp"
-	  android:layout_marginLeft="15dp"
-	  android:layout_marginRight="15dp"
-	  android:background="@drawable/seek_bar_bg"
-	  android:progressDrawable="@drawable/seek_bar_pro_drawable"
-	  />
-```
-
-```java
-
-    mHnv1 = (SlideZoomView) findViewById(R.id.hnv1);
-    mSeekBar1 = (SeekBar) findViewById(R.id.seek_bar1);
-    mHnv1.setNumberStringArray(new String[]{"1","2","3","4","5","6","7","8","9","10"});
-    mHnv1.setSeekBar(mSeekBar1);
-```
-
 Developed by
 -------
 
  ruzhan - <a href='javascript:'>dev19921116@gmail.com</a>
-
 
 License
 -------
